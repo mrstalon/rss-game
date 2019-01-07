@@ -1,7 +1,7 @@
 export default [
   {
     imgName: 'telegram-logo',
-    href: '',
+    href: 'https://t.me/mrstalon',
     linkText: '@mrstalon'
   },
   {

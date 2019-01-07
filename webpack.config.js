@@ -63,7 +63,7 @@ module.exports = {
                 },
             },
             {
-                test: /\.(ico|png|jpe?g|gif)(\?.*)?$/,
+                test: /\.(ogg|mp3|ico|png|jpe?g|gif)(\?.*)?$/,
                 use: {
                     loader: 'file-loader',
                     options: {

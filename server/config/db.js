@@ -1,3 +1,3 @@
 export default {
-    url: 'mongodb://MrStalon:amazing369@ds046037.mlab.com:46037/iphone_service_test',
+  url: 'mongodb://rss-game-user:amazing123@ds161306.mlab.com:61306/rss-game-task'
 }

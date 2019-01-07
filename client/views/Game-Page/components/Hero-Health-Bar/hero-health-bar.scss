@@ -1,0 +1,13 @@
+.hero-health-bar {
+  position: absolute;
+  top: 0;
+  width: 650px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    margin: 10px;
+  }
+}

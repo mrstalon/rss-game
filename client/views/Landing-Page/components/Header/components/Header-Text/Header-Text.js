@@ -2,7 +2,7 @@ import React from 'react'
 
 import './header-text.scss'
 
-import StartGameLink from '../../../Start-Game-Link'
+import StartRegistrationButton from '../../../Start-Registration-Button'
 
 class HeaderText extends React.Component {
   render() {
@@ -15,7 +15,7 @@ class HeaderText extends React.Component {
           можете стать лучше всех, сражаясь с безжалостными монстрами. Вперед, на встречу
           приключениям!
         </p>
-        <StartGameLink linkClasses={'orange-white'}/>
+        <StartRegistrationButton linkClasses={'orange-white'}/>
       </div>
     )
   }

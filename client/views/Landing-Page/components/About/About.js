@@ -2,7 +2,7 @@ import React from 'react'
 
 import './about.scss'
 
-import StartGameLink from '../Start-Game-Link'
+import StartRegistrationButton from '../Start-Registration-Button'
 
 
 class About extends React.Component {
@@ -16,7 +16,7 @@ class About extends React.Component {
           Будь жестким как эта игра!
           Нет...Будь жестче чем эта игра!
         </p>
-        <StartGameLink linkClasses={'white-black'}/>
+        <StartRegistrationButton linkClasses={'white-black'}/>
       </section>
     )
   }

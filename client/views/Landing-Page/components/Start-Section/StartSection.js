@@ -2,7 +2,7 @@ import React from 'react'
 
 import './start-section.scss'
 
-import StartGameLink from '../Start-Game-Link'
+import StartRegistrationButton from '../Start-Registration-Button'
 
 class StartSection extends React.Component {
   render() {
@@ -14,7 +14,7 @@ class StartSection extends React.Component {
           Ты сможешь победить всех монстров в этом опасном и жестоком мире.
           Волшебный посох в руки и в бой!
         </p>
-        <StartGameLink linkClasses={'white-black'}/>
+        <StartRegistrationButton linkClasses={'white-black'}/>
       </section>
     )
   }

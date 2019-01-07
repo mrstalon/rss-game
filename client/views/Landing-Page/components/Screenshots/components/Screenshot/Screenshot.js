@@ -4,7 +4,6 @@ import { connect } from 'react-redux'
 import './screenshot.scss'
 
 import { showChoosedScreenshot } from '../../../../../../actions/screenshots'
-import screenshotsInfo from '../../../../../../constants/screenshots'
 
 
 class Screenshot extends React.Component {
@@ -20,8 +19,7 @@ class Screenshot extends React.Component {
   render() {
     const { showMenu } = this
     const { img } = this.state
-    const { imgId } = this.props
-    const text = screenshotsInfo[imgId].text
+    const { text } = this.props
 
     return (
       <a className="screenshot-wrapper" onClick={() => showMenu()}>
