@@ -25,6 +25,7 @@ app.set('view engine', 'html')
 app.use('/api/users', usersRoutes)
 
 app.get('/', (req, res) => res.render('index'))
+app.get('*', (req, res) => res.render('index'))
 
 app.use((req, res, next) => {
   const error = new Error('An error occured')
@@ -40,7 +41,6 @@ app.use((error, req, res, next) => {
     }
   })
 })
-// app.get('*', (req, res) => res.render('index'))
 
 app
   .listen(PORT, HOST, () => logger.info(`Aplication server is listening on port ${PORT}.`))
