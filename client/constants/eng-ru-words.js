@@ -76,7 +76,7 @@ export default [
   },
   {
     word: 'class',
-    translations: ['тип', 'учебный класс', 'категория', 'занятия', 'урок'],
+    translations: ['тип', 'класс', 'категория', 'занятия', 'урок'],
     imgName: 'class.jpeg'
   },
   {

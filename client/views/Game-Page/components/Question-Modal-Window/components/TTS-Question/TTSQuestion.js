@@ -67,7 +67,7 @@ class TSSQuestion extends React.Component {
       return
     }
 
-    if (word.toLowerCase() === userResult.toLowerCase()) {
+    if (word.trim().toLowerCase() === userResult.trim().toLowerCase()) {
       setAnswerInfo({
         isAnswered: true,
         isUserAnswerCorrect: true,

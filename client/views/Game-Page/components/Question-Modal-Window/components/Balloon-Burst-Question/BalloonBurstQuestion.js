@@ -44,7 +44,7 @@ class BalloonBurstQuestion extends React.Component {
     let areUserInputsRight = true
 
     userInputs.map((input, id) => {
-      if (input !== words[id].word) {
+      if (input.trim().toLowerCase() !== words[id].word) {
         areUserInputsRight = false
       }
     })

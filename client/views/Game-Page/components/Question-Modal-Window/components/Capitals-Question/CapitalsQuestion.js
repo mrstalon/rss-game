@@ -55,7 +55,7 @@ class CapitalsQuestion extends React.Component {
       return
     }
 
-    if (userResult.toLowerCase() === result.toLowerCase()) {
+    if (userResult.trim().toLowerCase() === result.trim().toLowerCase()) {
       setAnswerInfo({
         isAnswered: true,
         isUserAnswerCorrect: true,

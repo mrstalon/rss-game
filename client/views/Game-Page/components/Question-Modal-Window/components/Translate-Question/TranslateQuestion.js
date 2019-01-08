@@ -57,7 +57,7 @@ class TranslateQuestion extends React.Component {
       return
     }
 
-    if (translations.findIndex((option) => option.toLowerCase() === userResult.toLowerCase()) !== -1) {
+    if (translations.findIndex((option) => option.trim().toLowerCase() === userResult.trim().toLowerCase()) !== -1) {
       setAnswerInfo({
         isAnswered: true,
         isUserAnswerCorrect: true,
