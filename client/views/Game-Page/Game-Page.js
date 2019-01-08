@@ -21,14 +21,14 @@ import apiWorker from '../../helpers/api/ApiWorker'
 class GamePage extends React.Component {
   componentDidMount() {
     const { userName, history, startRound } = this.props
-    // if (!userName) {
-      // history.push('/registration')
-    // } else {
+    if (!userName) {
+      history.push('/registration')
+    } else {
     startRound()
 
     const body = document.querySelector('body')
     body.style.overflowY = 'hidden'
-    // }
+    }
   }
 
   componentWillUnmount() {
@@ -148,13 +148,11 @@ class GamePage extends React.Component {
     return (
       <div className="game-page">
         {isQuestionAsked && <QuestionModalWindow />}
-        {/* <QuestionModalWindow /> */}
         <GameCanvas />
         <SpellBar />
         <HeroHealthBar />
         <MonsterHealthBar />
         {isRoundEnded && <Stats />}
-        {/* <Stats /> */}
       </div>
     )
   }
