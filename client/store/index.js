@@ -29,8 +29,6 @@ const reducer = combineReducers({
 });
 
 const middlewares = [thunk];
-
-alert(process.env.NODE_ENV);
 // middlewares.push(logger)
 
 const store = createStore(reducer, applyMiddleware(...middlewares));
