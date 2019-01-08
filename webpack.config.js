@@ -30,28 +30,20 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: [
-                  'style-loader',
-                  'css-loader',
-                  'sass-loader',
-                ]
-                // use: exctractPlugin.extract({
-                //     use: [
-                //         { loader: 'css-loader', options: { minimize: true } },
-                //         { loader: 'sass-loader' },
-                //     ],
-                // }),
+                use: exctractPlugin.extract({
+                    use: [
+                        { loader: 'css-loader', options: { minimize: true } },
+                        { loader: 'sass-loader' },
+                    ],
+                }),
             },
             {
                 test: /\.css$/,
-                use: [
-                    'style-loader', 'css-loader'
-                ]
-                // use: exctractPlugin.extract({
-                //     use: [
-                //         { loader: 'css-loader', options: { minimize: true } },
-                //     ],
-                // }),
+                use: exctractPlugin.extract({
+                    use: [
+                        { loader: 'css-loader', options: { minimize: true } },
+                    ],
+                }),
             },
             {
                 test: /\.html$/,
