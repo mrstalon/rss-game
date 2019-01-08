@@ -8,7 +8,7 @@ class StartSection extends React.Component {
   render() {
     return (
       <section className="start-section">
-        <h1 className="huge-text bold">Вперёд к победам на монстрами!</h1>
+        <h1 className="huge-text bold">Вперёд к победам над монстрами!</h1>
         <hr/>
         <p className="medium-text">
           Ты сможешь победить всех монстров в этом опасном и жестоком мире.
