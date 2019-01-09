@@ -64,7 +64,7 @@ export default [
     result: 'лось'
   },
   {
-    imgName: 'squarel.png',
+    imgName: 'squeral.png',
     result: 'белка'
   },
   {
